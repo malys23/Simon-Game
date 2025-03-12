@@ -12,4 +12,6 @@ var randomChosenColour = buttonColors[nextSequence()];
 //push new color into gamePattern
 gamePattern = gamePattern.push(randomChosenColour);
 
-$("#" + randomChosenColour).setTimer(animate({opacity: "0.2"}),100);
+//to make specified random color to flash
+$("#" + randomChosenColour).fadeOut(100).fadeIn(100);
+//to make specified random button play sound when flashing
